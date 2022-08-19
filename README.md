@@ -1,18 +1,24 @@
-These are my hand-written steps for installing Artix linux. Some steps may be outdated or I may have mistakingly transcribed the step wrong.
+These are my (literal) hand-written steps for installing Artix linux. <br>
+Some steps may be outdated or I may have mistakingly transcribed the step wrong.
 <br>
 
 A few things to keep in mind before copy pasting everything here
 <br>
 
-- This was written around the time artools-chroot became artix-chroot so it is a few years old. (logical volume parts are a slightly newer addition)
+- This was written around the time artools-chroot became artix-chroot so it is a few years old.<br>(logical volume parts are a slightly newer addition)
 - These steps assume you have already installed 'artix-base-runit-xxxxxx.iso' from https://artixlinux.org/download.php and have flashed the image to a usb and you are now at the process of installing artix onto a hard drive.
 - These steps also make some assumptions about your linux knowledge and don't hold your hand. If you don't know what a command does please consider looking it up :)
 - These steps were not made with the intention of sharing them online so it may seem like I skipped some things.
 - Next time I install a Artix on a new machine I will go over these steps to see if they are still valid (whenever that could be) and will document the steps fully at that time (and hopefully improve them).
 - This is for education purposes only :) -> use the offical guide https://wiki.artixlinux.org/Main/Installation
-<br>
+
 
 ---
+
+<br>
+<br>
+
+# Artix Runit Hardened-Kernel <br>Encrypted Partitions and Logical Volume
 
 <br>
 
