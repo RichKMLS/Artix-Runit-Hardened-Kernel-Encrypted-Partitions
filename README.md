@@ -29,7 +29,7 @@ vgcreate [groupName] /dev/sdx# /dev/sdy#<br>
 lvcreate -l 100%FREE -n [volName] [groupName]<br>
 #-------------------------------------------------------------------------
 
-cryptsetup open --type plain -d /dev/urandom /dev/sdx# wipe#
+cryptsetup open --type plain -d /dev/urandom /dev/sdx# wipe#<br>
 dd bs=1M if=/dev/urandom of=/dev/mapper/wipe# status=progress #overkill?
 
 cryptsetup -v --type luks2 -c aes-xts-plain64 -s 512 -h sha512 -i 5000 --use-random -y luksFormat /dev/sdx#
